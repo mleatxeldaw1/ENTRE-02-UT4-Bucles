@@ -1,5 +1,6 @@
 import java.util.Scanner;
 /**
+ * Mitxelk leache
  *   Clase de utilidades
  *   Incluye métodos estáticos
  */

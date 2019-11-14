@@ -1,6 +1,6 @@
 import java.util.Scanner;
 /**
- *  @author - 
+ *  @author - Mitxel leache
  *  
  * Incluye todo el código dentro del main()
  * No declares ningún nuevo método en esta clase ni atributos
