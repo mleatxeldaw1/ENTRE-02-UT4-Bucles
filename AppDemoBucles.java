@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 /**
  *  @author - 
  *  
@@ -8,6 +8,18 @@
  */
 public class AppDemoBucles
 {
+    // private static Scanner teclado;
+    // private DemoBucles db;
+    // /**
+    // * An example of a method - replace this comment with your own
+    // *
+    // * @param  y  a sample parameter for a method
+    // * @return    the sum of x and y
+    // */
+    // public AppDemoBucles()
+    // {
+    // Scanner teclado = new Scanner(System.in);
+    // }
 
     /**
      *  Punto de entrada a la aplicación. Dentro del main:
@@ -25,7 +37,28 @@ public class AppDemoBucles
      */
     public static void main(String[] args)
     {
-         
+        int maxima = 1;
+        Utilidades.borrarPantalla();
+        while(maxima == 1){
+            Scanner teclado = new Scanner(System.in); 
+            DemoBucles db = new DemoBucles();
+            System.out.print(" cantidad tope  máxima de aleatorios a generar ");
+            maxima = teclado.nextInt();
+            while(maxima < 10 || maxima > 15){
+                maxima = teclado.nextInt();
+            }
+            db.escribirSumaPotencias(maxima);
+            Utilidades.hacerPausa();
+            Utilidades.borrarPantalla();
+            // pa probar db.mostrarEscalera(10, 10, 10);
+            db.mostrarEscalera(6, 4, 12);
+            System.out.print("Si quieres empezar de nuevo pulsa 1, si no pulsa 0");
+            
+            maxima = teclado.nextInt();
+            if ( maxima != 1 && maxima != 0){
+                System.out.print("bn");
+            }
+        }
     }
 }
 
